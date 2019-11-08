@@ -1,0 +1,153 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Forms</title>
+  <link rel="stylesheet" type="text/css" href="style.css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css/hover.css">
+  <link rel="stylesheet" href="style.css/style.scss" type="text/css">
+  <link rel="stylesheet" href="style.css/style.css" type="text/css">
+
+
+  <style>
+    body {
+      background: #062E34;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 text-center mt-5">
+        <img src="image/logo/logo2.png" class="nav-logo" alt="">
+      </div>
+      <div class="col-md-12 text-center mt-4">
+        <p class="login-tag text-light">Log in to Quiz .</p>
+      </div>
+    </div>
+    <div class="container d-flex justify-content-center mt-4">
+
+      <div class="card sign-card p-3 p-md-5 col-lg-5 col-md-7">
+        <form class="needs-validation" action="welcome.html" novalidate="">
+          <div class="form-row">
+            <div class="col-md-12 mb-md-3 ">
+              <label for="validationCustom01" class="tag">Email Address</label>
+              <input type="email" class="form-control" id="validationCustom01"
+                pattern="[A-Za-z.1-9]{3,}[@]{1}[a-z]{4,6}[.]{1}[a-z]{3}" required="">
+              <div class="invalid-feedback">
+                <i class="fa fa-times"></i> Please enter valid email
+              </div>
+              <div class="valid-feedback">
+
+              </div>
+            </div>
+            <div class="col-md-12 mb-2">
+              <label for="validationCustom01" class="tag">Password</label>
+              <input type="password" class="form-control" id="validationCustom1" pattern="[A-Za-z1-9,]{6,}" required="">
+              <div class="invalid-feedback">
+                <i class="fa fa-times"></i> Please enter valid password</div>
+
+              <!-- Link trigger modal -->
+              <a href="" class="text-decoration-none" data-toggle="modal" data-target="#forgetpass">
+                <p class="text-dark mt-2 forget-password"><u>forget password?</u></p>
+              </a>
+
+              <div class="valid-feedback">
+
+              </div>
+            </div>
+
+
+
+            <div class="col-md-12">
+              <div class="text-center">
+                <button class="btn btn-block btn-info" type="submit"><span class="sign">Log in</span></button>
+              </div>
+            </div>
+          </div>
+        </form>
+
+
+      </div>
+
+    </div>
+    <div class="col-md-4 m-auto text-center">
+      <p class="text-light mt-1 account">Don’t have an account yet? <a href="sign_up.html"
+          class="text-decoration-none text-light"><u>Sign up</u></a></p>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="forgetpass" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog " role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Reset Password</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="tag"> Please enter your email address or phone number to reset your password.</p>
+
+          <form class="needs-validation" action="login.html" novalidate="">
+            <div class="row">
+              <div class="col-md-12">
+                <input type="email" class="form-control form-control-sm" id="validationCustom01"
+                  pattern="[A-Za-z.1-9]{3,}[@]{1}[a-z]{4,6}[.]{1}[a-z]{3}" required="">
+                <div class="invalid-feedback">
+                  <i class="fa fa-times"></i> Please enter valid email
+                </div>
+                <div class="valid-feedback">
+
+                </div>
+              </div>
+
+              <div class="col-md-12 py-3 text-right">
+                <button class="btn btn-info btn-sm " type="submit">Send</button>
+                <button type="button" class="btn btn-sm btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script>
+    (function () {
+      'use strict';
+      window.addEventListener('load', function () {
+
+
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener('submit', function (event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
+
+
+
+</body>
+
+</html>

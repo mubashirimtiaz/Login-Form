@@ -1,0 +1,82 @@
+
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 376px) 
+{
+	.nav-logo
+	{
+		height: 40px;
+	}
+}
+@media (min-width: 576px) 
+{
+	.nav-logo
+	{
+		height: 40px
+	}
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) 
+{ 
+	.nav-logo
+	{
+		height: 55px
+	}
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) 
+{
+	.nav-logo
+	{
+		height: 60px
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) 
+{
+	.nav-logo
+	{
+		height: 65px
+	}
+}
+
+.tag
+{
+	font-weight: bold;
+	font-size: 14px;
+}
+.main-tag
+{
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.login-tag
+{
+	font-size:35px;
+	font-weight:200;
+	
+}
+.sign
+{
+	font-weight:400;
+}
+.sign-card
+{
+	border:0;
+	border-radius:8px;
+}
+.forget-password
+{
+	font-size:12px;
+	font-weight:500;
+}
+.account
+{
+	font-size:14px;
+	font-weight:600;
+}
